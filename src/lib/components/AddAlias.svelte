@@ -87,7 +87,7 @@
         id="name"
         type="text"
         placeholder="e.g., GitHub"
-        class="input input-bordered w-full"
+        class="input input-bordered w-full bg-base-content/10"
         bind:value={name}
         required
       />
@@ -101,7 +101,7 @@
         id="url"
         type="url"
         placeholder="e.g., https://github.com"
-        class="input input-bordered w-full"
+        class="input input-bordered w-full bg-base-content/10"
         bind:value={url}
         required
       />

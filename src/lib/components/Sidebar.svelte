@@ -36,7 +36,7 @@
 </script>
 
 <aside class="h-16 bg-base-300 border-t border-base-300 z-50">
-  <nav class="flex flex-row justify-around items-center h-full px-2 pb-3">
+  <nav class="flex flex-row justify-around items-center h-full px-12 pb-3">
     {#each MENU_ITEMS as item}
       <button
         class="flex flex-col items-center justify-center px-1 transition-colors duration-200"

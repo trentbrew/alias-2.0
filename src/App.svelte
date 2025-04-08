@@ -17,6 +17,13 @@
   onMount(() => {
     initializeTheme();
     initializeApp();
+
+    // Listen for global navigation events from omnibox
+    window.addEventListener('routeChange', ((event: CustomEvent) => {
+      if (event.detail && event.detail.route) {
+        currentRoute.set(event.detail.route);
+      }
+    }) as EventListener);
   });
 
   // Handle route changes from sidebar
@@ -28,7 +35,7 @@
 <div class="h-screen bg-base-300" data-theme={$theme}>
   <div class="flex h-full flex-col">
     <header class="px-4 pt-2 flex justify-between items-center border-base-300">
-      <h1 class="text-2xl font-bold">Alia</h1>
+      <h1 class="text-2xl font-normal">alia</h1>
       <ThemeToggle />
     </header>
 
