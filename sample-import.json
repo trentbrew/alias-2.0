@@ -1,0 +1,6 @@
+{
+  "google": "https://google.com",
+  "github": "https://github.com",
+  "emptyShouldBeSkipped": "",
+  "nullUrlShouldBeSkipped": null
+}
